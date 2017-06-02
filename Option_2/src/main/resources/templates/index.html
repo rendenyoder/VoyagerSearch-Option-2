@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Getting Started: Serving Web Content</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <!--<p th:text="'Hello, ' + ${name} + '!'" />-->
+
+        <div class="container-fluid text-center" style="padding-bottom: 50px;">
+            <div clas="row text-center">
+                <div class="col text-center">
+                    <!--  -->
+                    <h1 style = "color: black;">Things being added/removed to the Solr index </h1>
+                    <!--  -->
+                    <div class="text-center">
+                        <!--  -->
+                        <div class="container">
+                            <!-- -->
+                            <ul class="list-group center text-center" id="parent-list" style="list-style-type: none;">
+                                <!-- -->
+                                <li class="list-group-item">
+                                    <div class="container-fluid">
+                                        <h3>Alerts</h3>
+                                    </div>
+                                </li>
+                                <!-- The Parent Message That Will Be Cloned for Future Messages -->
+                                <li class="list-group-item" id="solr-alert" style="word-break: break-all;">
+                                    No alerts so far!
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" th:src="@{/script.js}" />
+</html>

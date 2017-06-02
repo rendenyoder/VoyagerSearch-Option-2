@@ -1,0 +1,30 @@
+2017-06-02 21:45:28.451 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-06-02 21:45:28.739 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.5.1
+2017-06-02 21:45:28.739 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-06-02 21:45:28.739 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/rendenyoder/Desktop/Option#2/solr-6.5.1
+2017-06-02 21:45:28.751 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-06-02T21:45:28.740Z
+2017-06-02 21:45:28.751 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-06-02 21:45:28.764 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr
+2017-06-02 21:45:28.769 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr/solr.xml
+2017-06-02 21:45:29.003 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-06-02 21:45:34.121 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr
+2017-06-02 21:45:34.122 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [sample]
+2017-06-02 21:45:34.146 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.c.SolrConfig Using Lucene MatchVersion: 4.5.0
+2017-06-02 21:45:34.190 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.s.IndexSchema [sample] Schema name=sample
+2017-06-02 21:45:34.193 INFO  (main) [   ] o.e.j.s.Server Started @6130ms
+2017-06-02 21:45:34.215 WARN  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.s.IndexSchema [sample] default search field in schema is id. WARNING: Deprecated, please use 'df' on request instead.
+2017-06-02 21:45:34.215 WARN  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.s.IndexSchema [sample] query parser default operator is OR. WARNING: Deprecated, please use 'q.op' on request instead.
+2017-06-02 21:45:34.216 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.s.IndexSchema Loaded schema sample/1.1 with uniqueid field id
+2017-06-02 21:45:34.218 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.c.CoreContainer Creating SolrCore 'sample' using configuration from instancedir /Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr/sample_core/sample
+2017-06-02 21:45:34.242 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-06-02 21:45:34.246 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.c.SolrCore [[sample] ] Opening new SolrCore at [/Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr/sample_core/sample], dataDir=[/Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr/sample_core/sample/data/]
+2017-06-02 21:45:39.522 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2017-06-02 21:45:39.522 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-06-02 21:45:39.535 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.s.SolrIndexSearcher Opening [Searcher@7e58f08f[sample] main]
+2017-06-02 21:45:39.541 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr/sample_core/sample/conf
+2017-06-02 21:45:39.552 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-06-02 21:45:39.571 INFO  (searcherExecutor-7-thread-1-processing-x:sample) [   x:sample] o.a.s.c.SolrCore [sample] Registered new searcher Searcher@7e58f08f[sample] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-06-02 21:46:14.842 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1254344205
+2017-06-02 21:46:14.844 INFO  (coreCloseExecutor-11-thread-1) [   x:sample] o.a.s.c.SolrCore [sample]  CLOSING SolrCore org.apache.solr.core.SolrCore@1d14fedf
+2017-06-02 21:46:14.848 INFO  (coreCloseExecutor-11-thread-1) [   x:sample] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.sample
+2017-06-02 21:46:14.850 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node

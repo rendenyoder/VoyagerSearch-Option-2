@@ -1,0 +1,58 @@
+2017-06-02 21:47:08.008 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.14.v20161028
+2017-06-02 21:47:08.322 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 6.5.1
+2017-06-02 21:47:08.322 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2017-06-02 21:47:08.322 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/rendenyoder/Desktop/Option#2/solr-6.5.1
+2017-06-02 21:47:08.333 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2017-06-02T21:47:08.323Z
+2017-06-02 21:47:08.334 INFO  (main) [   ] o.a.s.s.StartupLoggingUtils Property solr.log.muteconsole given. Muting ConsoleAppender named CONSOLE
+2017-06-02 21:47:08.346 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr
+2017-06-02 21:47:08.351 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr/solr.xml
+2017-06-02 21:47:08.578 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2017-06-02 21:47:13.695 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr
+2017-06-02 21:47:13.697 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [sample]
+2017-06-02 21:47:13.721 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.c.SolrConfig Using Lucene MatchVersion: 4.5.0
+2017-06-02 21:47:13.765 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.s.IndexSchema [sample] Schema name=sample
+2017-06-02 21:47:13.767 INFO  (main) [   ] o.e.j.s.Server Started @6150ms
+2017-06-02 21:47:13.787 WARN  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.s.IndexSchema [sample] default search field in schema is id. WARNING: Deprecated, please use 'df' on request instead.
+2017-06-02 21:47:13.787 WARN  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.s.IndexSchema [sample] query parser default operator is OR. WARNING: Deprecated, please use 'q.op' on request instead.
+2017-06-02 21:47:13.788 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.s.IndexSchema Loaded schema sample/1.1 with uniqueid field id
+2017-06-02 21:47:13.789 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.c.CoreContainer Creating SolrCore 'sample' using configuration from instancedir /Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr/sample_core/sample
+2017-06-02 21:47:13.812 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.c.SolrCore solr.RecoveryStrategy.Builder
+2017-06-02 21:47:13.817 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.c.SolrCore [[sample] ] Opening new SolrCore at [/Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr/sample_core/sample], dataDir=[/Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr/sample_core/sample/data/]
+2017-06-02 21:47:19.039 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2017-06-02 21:47:19.039 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2017-06-02 21:47:19.074 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.s.SolrIndexSearcher Opening [Searcher@38b03de6[sample] main]
+2017-06-02 21:47:19.080 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/rendenyoder/Desktop/Option#2/solr-6.5.1/server/solr/sample_core/sample/conf
+2017-06-02 21:47:19.091 INFO  (coreLoadExecutor-6-thread-1) [   x:sample] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2017-06-02 21:47:19.110 INFO  (searcherExecutor-7-thread-1-processing-x:sample) [   x:sample] o.a.s.c.SolrCore [sample] Registered new searcher Searcher@38b03de6[sample] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2017-06-02 21:48:47.875 INFO  (qtp1205044462-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1496440127598} status=0 QTime=5
+2017-06-02 21:48:47.911 INFO  (qtp1205044462-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1496440127599} status=0 QTime=40
+2017-06-02 21:48:50.246 INFO  (qtp1205044462-14) [   x:sample] o.a.s.c.S.Request [sample]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1496440127810} hits=0 status=0 QTime=29
+2017-06-02 21:49:07.367 INFO  (qtp1205044462-20) [   x:sample] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-06-02 21:49:07.367 INFO  (qtp1205044462-20) [   x:sample] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@3e37f6d
+2017-06-02 21:49:07.430 INFO  (qtp1205044462-20) [   x:sample] o.a.s.s.SolrIndexSearcher Opening [Searcher@7fd11b9[sample] main]
+2017-06-02 21:49:07.431 INFO  (qtp1205044462-20) [   x:sample] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-06-02 21:49:07.431 INFO  (searcherExecutor-7-thread-1-processing-x:sample) [   x:sample] o.a.s.c.SolrCore [sample] Registered new searcher Searcher@7fd11b9[sample] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.5.1):C1)))}
+2017-06-02 21:49:07.432 INFO  (qtp1205044462-20) [   x:sample] o.a.s.u.p.LogUpdateProcessorFactory [sample]  webapp=/solr path=/update params={commit=true&wt=json}{add=[5],commit=} 0 106
+2017-06-02 21:49:08.473 INFO  (qtp1205044462-17) [   x:sample] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-06-02 21:49:08.473 INFO  (qtp1205044462-17) [   x:sample] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@3e37f6d
+2017-06-02 21:49:08.494 INFO  (qtp1205044462-17) [   x:sample] o.a.s.s.SolrIndexSearcher Opening [Searcher@3419a77c[sample] main]
+2017-06-02 21:49:08.494 INFO  (qtp1205044462-17) [   x:sample] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-06-02 21:49:08.494 INFO  (searcherExecutor-7-thread-1-processing-x:sample) [   x:sample] o.a.s.c.SolrCore [sample] Registered new searcher Searcher@3419a77c[sample] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.5.1):C1) Uninverting(_1(6.5.1):C1)))}
+2017-06-02 21:49:08.494 INFO  (qtp1205044462-17) [   x:sample] o.a.s.u.p.LogUpdateProcessorFactory [sample]  webapp=/solr path=/update params={commit=true&wt=json}{add=[9],commit=} 0 23
+2017-06-02 21:49:10.965 INFO  (qtp1205044462-12) [   x:sample] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-06-02 21:49:10.966 INFO  (qtp1205044462-12) [   x:sample] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@3e37f6d
+2017-06-02 21:49:10.980 INFO  (qtp1205044462-12) [   x:sample] o.a.s.s.SolrIndexSearcher Opening [Searcher@4c367a8b[sample] main]
+2017-06-02 21:49:10.980 INFO  (qtp1205044462-12) [   x:sample] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-06-02 21:49:10.980 INFO  (searcherExecutor-7-thread-1-processing-x:sample) [   x:sample] o.a.s.c.SolrCore [sample] Registered new searcher Searcher@4c367a8b[sample] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.5.1):C1) Uninverting(_1(6.5.1):C1) Uninverting(_2(6.5.1):C1)))}
+2017-06-02 21:49:10.980 INFO  (qtp1205044462-12) [   x:sample] o.a.s.u.p.LogUpdateProcessorFactory [sample]  webapp=/solr path=/update params={commit=true&wt=json}{add=[3],commit=} 0 16
+2017-06-02 21:49:11.876 INFO  (qtp1205044462-15) [   x:sample] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2017-06-02 21:49:11.877 INFO  (qtp1205044462-15) [   x:sample] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@3e37f6d
+2017-06-02 21:49:11.883 INFO  (qtp1205044462-15) [   x:sample] o.a.s.s.SolrIndexSearcher Opening [Searcher@8d4f660[sample] main]
+2017-06-02 21:49:11.884 INFO  (qtp1205044462-15) [   x:sample] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2017-06-02 21:49:11.884 INFO  (searcherExecutor-7-thread-1-processing-x:sample) [   x:sample] o.a.s.c.SolrCore [sample] Registered new searcher Searcher@8d4f660[sample] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.5.1):C1) Uninverting(_1(6.5.1):C1) Uninverting(_2(6.5.1):C1) Uninverting(_3(6.5.1):C1)))}
+2017-06-02 21:49:11.884 INFO  (qtp1205044462-15) [   x:sample] o.a.s.u.p.LogUpdateProcessorFactory [sample]  webapp=/solr path=/update params={commit=true&wt=json}{add=[18],commit=} 0 8
+2017-06-02 21:49:21.132 INFO  (qtp1205044462-15) [   x:sample] o.a.s.c.S.Request [sample]  webapp=/solr path=/select params={q=*:*&indent=on&wt=json&_=1496440127810} hits=4 status=0 QTime=5
+2017-06-02 21:49:41.649 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1254344205
+2017-06-02 21:49:41.650 INFO  (coreCloseExecutor-11-thread-1) [   x:sample] o.a.s.c.SolrCore [sample]  CLOSING SolrCore org.apache.solr.core.SolrCore@6d45c28d
+2017-06-02 21:49:41.659 INFO  (coreCloseExecutor-11-thread-1) [   x:sample] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.core.sample
+2017-06-02 21:49:41.660 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for: solr.node
